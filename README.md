@@ -5,9 +5,11 @@
 [![CocoaPods](https://img.shields.io/cocoapods/p/KenticoKontentDelivery.svg)](https://cocoapods.org/pods/KenticoKontentDelivery)
 
 ## Summary
+
 The Kentico Kontent Delivery SDK is a library used for retrieving content. You can use the SDK as a CocoaPod package or add it manually.
 
 ### Sample app
+
 The repository contains sample app which demonstrates basic usage of the SDK. It displays content from a Sample Project that demonstrates Kentico Kontent features and best practices. This fully featured project contains marketing content for Dancing Goat – an imaginary chain of coffee shops. If you don't have your own Sample Project, any admin of a Kentico Kontent subscription [can generate one](https://docs.kontent.ai/tutorials/set-up-projects/manage-projects/managing-projects#a-creating-a-sample-project). 
 
 <img src="https://github.com/Kentico/kontent-delivery-sdk-swift/blob/master/SampleAppScreens/splashScreens.png?raw=true" width="212"> <img src="https://github.com/Kentico/kontent-delivery-sdk-swift/blob/master/SampleAppScreens/ourBeans.png?raw=true" width="212"> <img src="https://github.com/Kentico/kontent-delivery-sdk-swift/blob/master/SampleAppScreens/ourBeans.png?raw=true" width="212"> <img src="https://github.com/Kentico/kontent-delivery-sdk-swift/blob/master/SampleAppScreens/locations.png?raw=true" width="212">
@@ -114,7 +116,7 @@ $ pod install
 
 The `DeliveryClient` class is the main class of the SDK for getting content. Using this class, you can retrieve content from your Kentico Kontent projects.
 
-To create an instance of the class, you need to provide a [project ID](https://docs.kontent.ai/tutorials/develop-apps/get-content/getting-content#section-getting-content-items):
+To create an instance of the class, you need to provide a [project ID](https://kontent.ai/learn/tutorials/develop-apps/get-content/get-content-items#a-1-find-your-project-id):
 
 ```swift
 // Initializes an instance of the DeliveryClient client
@@ -133,7 +135,7 @@ import KenticoKontentDelivery
 let client = DeliveryClient.init(projectId: "YOUR_PROJECT_ID", previewApiKey:"PREVIEW_API_KEY")
 ```
 
-For more details, see [Previewing unpublished content using the Delivery API](https://docs.kontent.ai/tutorials/develop-apps/get-content/configuring-preview-for-content-items#a-set-up-content-preview-in-your-project).
+For more details, see [how to set up preview for content items](https://kontent.ai/learn/tutorials/develop-apps/build-strong-foundation/set-up-preview).
 
 ### Getting content from secured project
 
@@ -145,7 +147,7 @@ import KenticoKontentDelivery
 let client = DeliveryClient.init(projectId: "YOUR_PROJECT_ID", secureApiKey:"SECURE_API_KEY")
 ```
 
-For more details, see [Securing the Delivery API](https://docs.kontent.ai/reference/kentico-kontent-apis-overview#secure-access).
+For more details, see [Securing the Delivery API](https://kontent.ai/learn/tutorials/develop-apps/build-strong-foundation/restrict-public-access).
 
 ### Configuring retry policy
 
@@ -170,7 +172,7 @@ let client = DeliveryClient.init(projectId: "YOUR_PROJECT_ID", isRetryEnabled: f
 
 ### Using strongly typed models
 
-In order to receive strongly typed items you need to implement your item model. It's necessary to conform to `Mappable` protocol and implement mapping functionality. You can use your own mapping or our strongly typed element types.
+To receive strongly typed items, you need to implement your item model. It's necessary to conform to `Mappable` protocol and implement mapping functionality. You can use your own mapping or our strongly typed element types.
 
 - Element types mapping:
 ```swift
@@ -346,9 +348,9 @@ client.getTaxonomies(completionHandler: { (isSuccess, deliveryItems, error) in
 
 ## Use image transformation
 
-Kentico Kontent supports image transformation by using URL parameters. A helper class is provided to create the URL conveniently.
+Kontent supports image transformation by using URL parameters. A helper class is provided to create the URL conveniently.
 
-However, see our [documentation on image transformation](https://docs.kontent.ai/reference/image-transformation) to understand the restriction of parameters before using the helper class, as the helper class does not validate the input parameters.
+Check our [Image transformation reference](https://kontent.ai/learn/reference/image-transformation) to understand the restriction of parameters before using the helper class, as the helper class does not validate the input parameters.
 
 Here is a sample usage:
 
@@ -403,7 +405,7 @@ We use Jazzy which is a command-line utility that generates documentation for Sw
 
 ## Further information
 
-For more developer resources, visit the Kentico Kontent tutorials at <https://docs.kontent.ai/tutorials/develop-apps>.
+For more developer resources, visit the Kentico Kontent tutorials at <https://kontent.ai/learn/tutorials/develop-apps/overview>.
 
 ## Feedback & Contributing
 
