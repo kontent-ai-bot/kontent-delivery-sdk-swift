@@ -1,5 +1,8 @@
 # Kentico Kontent Delivery SDK
 
+## :warning: Archival notice
+> This repository has been archived and is no longer maintained.
+
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-kontent)
 [![CocoaPods](https://img.shields.io/cocoapods/v/KenticoKontentDelivery.svg)](https://cocoapods.org/pods/KenticoKontentDelivery)
 [![CocoaPods](https://img.shields.io/cocoapods/p/KenticoKontentDelivery.svg)](https://cocoapods.org/pods/KenticoKontentDelivery)
